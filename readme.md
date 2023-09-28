@@ -21,9 +21,9 @@ Data are geospatial files in `shapefile format`:
 <pre>
 📦olympic-games_php-project
  ┣ 📂data
- ┃ ┣ 📜les-commerces-par-commune-ou-arrondissement-base-permanente-des-equipements.shp
- ┃ ┣ 📜les_hotels_classes_en_ile-de-france.shp
- ┃ ┗ 📜les_salles_de_cinemas_en_ile-de-france.shp
+ ┃ ┣ 📜les_commerces_par_commune_ou_arrondissement_base_permanente_des_equipements.shp
+ ┃ ┣ 📜les_hotels_classes_en_ile_de_france.shp
+ ┃ ┗ 📜les_salles_de_cinemas_en_ile_de_france.shp
 </pre>
 
 - les-commerces-par-commune-ou-arrondissement-base-permanente-des-equipements.shp : <br>
@@ -38,7 +38,7 @@ representing the shops by commune of Ile-de-France
 
 2. Move this cloned folder to WampServer `(without changing the folder name)`
 
-3. Integrating geographic layers on PostGIS `(keep the same file name)`
+3. Integrating geographic layers on PostGIS in your database `(keep the same file name)`
 
 4. Setup the database in config.php :
 <pre>
