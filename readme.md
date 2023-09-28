@@ -26,10 +26,10 @@ Data are geospatial files in `shapefile format`:
  ┃ ┗ 📜les_salles_de_cinemas_en_ile_de_france.shp
 </pre>
 
-- les-commerces-par-commune-ou-arrondissement-base-permanente-des-equipements.shp : <br>
+- les_commerces_par_commune_ou_arrondissement_base_permanente_des_equipements.shp : <br>
 representing the shops by commune of Ile-de-France
-- les_hotels_classes_en_ile-de-france.shp : representing the hotels of Ile-de-France
-- les_salles_de_cinemas_en_ile-de-france.shp : representing the cinemas of Ile-de-France
+- les_hotels_classes_en_ile_de_france.shp : representing the hotels of Ile-de-France
+- les_salles_de_cinemas_en_ile_de_france.shp : representing the cinemas of Ile-de-France
 
 ## Dependencies
 
