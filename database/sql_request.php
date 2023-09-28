@@ -14,7 +14,7 @@
             FROM les_salles_de_cinemas_en_ile_de_france AS cinema
             GROUP BY cp
             HAVING COUNT(cinema.code_insee) > 5) AS cinema_commerce
-            JOIN les_commerces_par_commune_ou_arrondissement_base_permanente_des AS commerce_commune
+            JOIN communes_ile_de_france AS commerce_commune
             ON cinema_commerce.cp = commerce_commune.departement__1;";
         
         // Requête SQL du second bouton radio
@@ -24,7 +24,7 @@
             FROM les_salles_de_cinemas_en_ile_de_france AS cinema
             GROUP BY cp
             HAVING count(cinema.code_insee) < 2) AS cinema_commerce
-            JOIN les_commerces_par_commune_ou_arrondissement_base_permanente_des AS commerce_commune
+            JOIN communes_ile_de_france AS commerce_commune
             ON cinema_commerce.cp = commerce_commune.departement__1;";
 
         // Requête SQL du troisième bouton radio
@@ -40,7 +40,7 @@
             WHERE hotel.classement LIKE '4%'
             GROUP BY nouveau_codeINSEE, hotel.classement
             Having COUNT(code_postal) > 20) AS hotel_commerce
-            JOIN les_commerces_par_commune_ou_arrondissement_base_permanente_des AS commerce_commune
+            JOIN communes_ile_de_france AS commerce_commune
             ON hotel_commerce.nouveau_codeINSEE = commerce_commune.departement__1;";
 
         // Requête SQL du quatrième bouton radio
@@ -56,7 +56,7 @@
             where hotel.classement like '3%'
             GROUP BY nouveau_codeINSEE, hotel.classement
             Having COUNT(code_postal) < 15) as hotel_commerce
-            join les_commerces_par_commune_ou_arrondissement_base_permanente_des as commerce_commune
+            join communes_ile_de_france as commerce_commune
             on hotel_commerce.nouveau_codeINSEE = commerce_commune.departement__1
             join les_salles_de_cinemas_en_ile_de_france as cinema
             on cinema.code_insee = commerce_commune.departement__1
