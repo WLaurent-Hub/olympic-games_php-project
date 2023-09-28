@@ -31,6 +31,15 @@ representing the shops by commune of Ile-de-France
 - les_hotels_classes_en_ile-de-france.shp : representing the hotels of Ile-de-France
 - les_salles_de_cinemas_en_ile-de-france.shp : representing the cinemas of Ile-de-France
 
+## Dependencies
+
+The project is based on the frameworks and development environments:
+- Leaflet **v1.9.4**
+- PHP **v.8.2.0**
+- WampServer **v3.3.0**
+- PostgreSQL **v7.1**
+- PostGIS **v3.3.3**
+
 ## Run locally
 
 1. Clone the project :
