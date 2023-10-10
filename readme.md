@@ -43,13 +43,16 @@ The project is based on the frameworks and development environments:
 ## Run locally
 
 1. Clone the project :
-    - git clone https://github.com/WLaurent-Hub/olympic-games_php-project.git
+   
+```bash
+git clone https://github.com/WLaurent-Hub/olympic-games_php-project.git
+```
 
-2. Move this cloned folder to WampServer `(without changing the folder name)`
+3. Move this cloned folder to WampServer `(without changing the folder name)`
 
-3. Integrating geographic layers on PostGIS in your database `(keep the same file name)`
+4. Integrating geographic layers on PostGIS in your database `(keep the same file name)`
 
-4. Setup the database in config.php :
+5. Setup the database in config.php :
 <pre>
 📦olympic-games_php-project
 ┣ 📜config.php
@@ -57,13 +60,14 @@ The project is based on the frameworks and development environments:
 
 5. Creating a new table in your database (implement this code in the PSQL Tool) : <br>
 *PS: not very correct in terms of safety, needs to be changed for greater safety*
-<pre>
-    CREATE TABLE utilisateurs (
+
+```bash
+CREATE TABLE utilisateurs (
     id SERIAL PRIMARY KEY,
     username VARCHAR(255) NOT NULL,
     password VARCHAR(255) NOT NULL
     );
-</pre>
-
+```
+  
 6. Launch the project on WampServer's localhost
 
