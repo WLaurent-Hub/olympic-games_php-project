@@ -16,7 +16,7 @@ The header is used to navigate between the tabs:
 
 ## Data 
 
-Data are geospatial files in `shapefile format`:
+Data are geospatial files in [shapefile format](https://doc.arcgis.com/en/arcgis-online/reference/shapefiles.htm):
 
 <pre>
 📦olympic-games_php-project
